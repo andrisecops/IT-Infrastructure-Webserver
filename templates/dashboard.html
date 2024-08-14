@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Infrastruktur Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <div id="data-visualization">
+        <p>Traffic In: {{ data.traffic_in }}</p>
+        <p>Traffic Out: {{ data.traffic_out }}</p>
+        <p>Threats Detected: {{ data.threats_detected }}</p>
+        <p>Alerts: {{ data.alerts }}</p>
+    </div>
+</body>
+</html>
